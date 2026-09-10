@@ -7,14 +7,9 @@
     "dev": "vite --configLoader runner dev",
     "build": "rm -rf ./dist && vite --configLoader runner build"
   },
-  "peerDependencies": {
-    "@sveltejs/kit": "*",
-    "vite": "*"
-  },
+  "peerDependencies": {},
   "dependencies": {
-    "@sveltejs/adapter-static": "3.0.10",
     "@sveltejs/kit": "2.70.3",
-    "@sveltejs/vite-plugin-svelte": "7.3.0",
     "vite": "8.2.2",
     "vitest": "4.1.11"
   },

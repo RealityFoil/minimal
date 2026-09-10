@@ -11,11 +11,6 @@
     "dev": "svelte-package -w -o .built/dist",
     "build": "svelte-package -o .built/dist"
   },
-  "peerDependencies": {
-    "@sveltejs/kit": "*"
-  },
-  "dependencies": {
-    "@sveltejs/adapter-auto": "7.0.1",
-    "@sveltejs/vite-plugin-svelte": "7.3.0"
-  }
+  "peerDependencies": {},
+  "dependencies": {}
 }
