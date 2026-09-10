@@ -1,2 +1,2 @@
-import config from '@yp/web.config/app/svelte.config.js';
+import config from '@rf/web.config/app/svelte.config.js';
 export default config;

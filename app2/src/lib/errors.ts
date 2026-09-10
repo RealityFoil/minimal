@@ -5,8 +5,8 @@ import {
   EnvMode,
   extractCallSiteFromError,
   extractStackFromError,
-} from '@yp/common/core.ts';
-import { ContentType, Header } from '@yp/common/http.ts';
+} from '@rf/common/core.ts';
+import { ContentType, Header } from '@rf/common/http.ts';
 import {
   isAbsent,
   isBoolean,
@@ -17,11 +17,11 @@ import {
   pick,
   recordEntries,
   recordFromEntries,
-} from '@yp/common/identity.ts';
-import { asNumber } from '@yp/common/math.ts';
-import { DateTime } from '@yp/common/time.ts';
-import type { ErrorReport } from '@yp/util.app/errors.ts';
-import { Session } from '@yp/web.firebase/context.ts';
+} from '@rf/common/identity.ts';
+import { asNumber } from '@rf/common/math.ts';
+import { DateTime } from '@rf/common/time.ts';
+import type { ErrorReport } from '@rf/util.app/errors.ts';
+import { Session } from '@rf/web.firebase/context.ts';
 
 function contextualizeLines(
   lines: Array<readonly [string, unknown]>,

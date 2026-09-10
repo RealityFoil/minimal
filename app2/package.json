@@ -1,8 +1,8 @@
 {
-  "name": "@yp.minimal/app2",
+  "name": "@rf.minimal/app2",
   "version": "1.0.0",
   "description": "Minimal Firebase + SvelteKit app",
-  "author": "Brian McBarron <brian@yellowpawn.llc> (https://yellowpawn.games)",
+  "author": "Brian McBarron <brian@realityfoil.com> (https://realityfoil.com)",
   "license": "UNLICENSED",
   "private": true,
   "type": "module",
@@ -67,16 +67,16 @@
     "vite": "8.2.2"
   },
   "devDependencies": {
-    "@yp/common": "file:../../../packages/common/lib",
-    "@yp/node.apis.gcloud": "file:../../../packages/node/apis/gcloud",
-    "@yp/node.app": "file:../../../packages/node/app",
-    "@yp/node.core": "file:../../../packages/node/core",
-    "@yp/node.firebase": "file:../../../packages/node/firebase",
-    "@yp/util.app": "file:../../../packages/util/app",
-    "@yp/util.firebase": "file:../../../packages/util/firebase",
-    "@yp/util.svelte": "file:../../../packages/util/svelte",
-    "@yp/web.app": "file:../../../packages/web/app",
-    "@yp/web.config": "file:../../../packages/web/config",
-    "@yp/web.firebase": "file:../../../packages/web/firebase"
+    "@rf/common": "file:../../../packages/common/lib",
+    "@rf/node.apis.gcloud": "file:../../../packages/node/apis/gcloud",
+    "@rf/node.app": "file:../../../packages/node/app",
+    "@rf/node.core": "file:../../../packages/node/core",
+    "@rf/node.firebase": "file:../../../packages/node/firebase",
+    "@rf/util.app": "file:../../../packages/util/app",
+    "@rf/util.firebase": "file:../../../packages/util/firebase",
+    "@rf/util.svelte": "file:../../../packages/util/svelte",
+    "@rf/web.app": "file:../../../packages/web/app",
+    "@rf/web.config": "file:../../../packages/web/config",
+    "@rf/web.firebase": "file:../../../packages/web/firebase"
   }
 }

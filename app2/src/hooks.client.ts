@@ -1,8 +1,8 @@
 import { Firebase } from '#lib/common/public.ts';
 import PackageConfig from '#pkg' with { type: 'json' };
-import { IsProduction } from '@yp/common/core.ts';
-import { handleClientError } from '@yp/web.app/client/errors.ts';
-import { initClient } from '@yp/web.firebase/client/init.ts';
+import { IsProduction } from '@rf/common/core.ts';
+import { handleClientError } from '@rf/web.app/client/errors.ts';
+import { initClient } from '@rf/web.firebase/client/init.ts';
 
 export const handleError = handleClientError();
 

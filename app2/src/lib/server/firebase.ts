@@ -1,8 +1,8 @@
-import { isString, recordEntries, recordFromEntries } from '@yp/common/identity.ts';
-import { DownloadedSecret } from '@yp/node.apis.gcloud/secrets.ts';
-import { WorkspaceDir } from '@yp/node.core/filesystem.ts';
-import { mkdir } from '@yp/node.core/process.ts';
-import { initializeAdmin } from '@yp/node.firebase/init.ts';
+import { isString, recordEntries, recordFromEntries } from '@rf/common/identity.ts';
+import { DownloadedSecret } from '@rf/node.apis.gcloud/secrets.ts';
+import { WorkspaceDir } from '@rf/node.core/filesystem.ts';
+import { mkdir } from '@rf/node.core/process.ts';
+import { initializeAdmin } from '@rf/node.firebase/init.ts';
 import { join } from 'node:path';
 import { Firebase } from '../common/public.ts';
 

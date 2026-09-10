@@ -1,5 +1,5 @@
 {
-  "name": "@yp.minimal/app",
+  "name": "@rf.minimal/app",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -19,6 +19,6 @@
     "vitest": "4.1.11"
   },
   "devDependencies": {
-    "@yp.minimal/components": "*"
+    "@rf.minimal/components": "*"
   }
 }

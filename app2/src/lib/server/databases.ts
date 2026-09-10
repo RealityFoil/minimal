@@ -1,3 +1,3 @@
-import type { Schema } from '@yp/common/schema.ts';
+import type { Schema } from '@rf/common/schema.ts';
 
 export const Databases: ReadonlyArray<Schema<any>> = [] as const;

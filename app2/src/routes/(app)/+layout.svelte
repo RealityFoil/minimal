@@ -4,12 +4,12 @@
 </script>
 
 <script lang="ts">
-  import { ignore } from '@yp/common/async.ts';
-  import { Orientation, screenSize } from '@yp/web.app/client/device.ts';
-  import { checkForElementIdUniqueness } from '@yp/web.app/client/util.ts';
-  import { initCallbacks } from '@yp/web.app/context/context.svelte.ts';
-  import { CbToast, Toaster } from '@yp/web.app/tw/Toaster.ts';
-  import { initUserContext } from '@yp/web.firebase/auth/context.svelte.ts';
+  import { ignore } from '@rf/common/async.ts';
+  import { Orientation, screenSize } from '@rf/web.app/client/device.ts';
+  import { checkForElementIdUniqueness } from '@rf/web.app/client/util.ts';
+  import { initCallbacks } from '@rf/web.app/context/context.svelte.ts';
+  import { CbToast, Toaster } from '@rf/web.app/tw/Toaster.ts';
+  import { initUserContext } from '@rf/web.firebase/auth/context.svelte.ts';
   import { onMount, type Snippet } from 'svelte';
   import type { PageProps } from './$types.ts';
 

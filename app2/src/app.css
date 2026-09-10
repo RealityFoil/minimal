@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 @source "../../../../packages/web/app/src";
 @source "../../../../packages/config/lib";
-@import '~@yp/web.config/lib/app/tailwind.css';
+@import '~@rf/web.config/lib/app/tailwind.css';
 
 /* TODO: Only hide this in Dev mode */
 /* .firebase-emulator-warning {

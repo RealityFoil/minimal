@@ -1,6 +1,6 @@
 import { initFirebase } from '#lib/server/firebase.ts';
 import type { ServerInit } from '@sveltejs/kit';
-import { handleServerRequest } from '@yp/node.firebase/appInit.ts';
+import { handleServerRequest } from '@rf/node.firebase/appInit.ts';
 
 export const init: ServerInit = async () => {
   // __registerGlobalInspect();

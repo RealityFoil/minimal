@@ -1,5 +1,5 @@
 import PackageConfig from '#pkg' with { type: 'json' };
-import type { VersionData } from '@yp/web.app/api/version.ts';
+import type { VersionData } from '@rf/web.app/api/version.ts';
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types.ts';
 

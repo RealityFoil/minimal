@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { userContext } from '@yp/web.firebase/auth/context.svelte.ts';
+  import { userContext } from '@rf/web.firebase/auth/context.svelte.ts';
 
   const uctx = userContext();
 </script>

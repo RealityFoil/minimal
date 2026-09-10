@@ -1,7 +1,7 @@
 // This can be false if you're using a fallback (i.e. SPA mode)
-import { isPresent } from '@yp/common/identity.ts';
-import { checkVersion } from '@yp/web.app/api/version.ts';
-import { checkUpdate } from '@yp/web.app/client/pwa/update.ts';
+import { isPresent } from '@rf/common/identity.ts';
+import { checkVersion } from '@rf/web.app/api/version.ts';
+import { checkUpdate } from '@rf/web.app/client/pwa/update.ts';
 import type { LayoutLoad } from './$types.ts';
 
 // https://kit.svelte.dev/docs/adapter-static#usage

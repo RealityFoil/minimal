@@ -1,6 +1,6 @@
 import { goto } from '$app/navigation';
-import { log } from '@yp/common/core.ts';
-import { userSignOut } from '@yp/web.firebase/client/auth.ts';
+import { log } from '@rf/common/core.ts';
+import { userSignOut } from '@rf/web.firebase/client/auth.ts';
 
 export async function load({ url }: { url: URL }) {
   if (url.searchParams.get('signOut') === '1') {
