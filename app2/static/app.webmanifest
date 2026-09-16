@@ -12,9 +12,7 @@
   "dir": "ltr",
   "orientation": "portrait",
   "description": "Minimal Firebase + SvelteKit SSR app",
-  "categories": [
-    "entertainment"
-  ],
+  "categories": ["entertainment"],
   "icons": [
     {
       "src": "/assets/icon-96.png",
