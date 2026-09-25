@@ -44,8 +44,6 @@
     "rules:build": "sh expand.sh %_cli fb rules.populate %./config/firestore.template.rules %@/src/lib/server/databases.ts",
     "rules:deploy": "sh expand.sh %_fb_cli deploy --only firestore",
     "deploy:rules": "sh run_all.sh rules:build rules:deploy",
-    "site:versionup": "sh version.sh",
-    "site:showversion": "sh -c \"echo $npm_package_version\"",
     "site:canary": "sh expand.sh %_fb_cli hosting:channel:deploy canary --only %_target && echo || sh expand.sh echo See %./firebase-debug.log",
     "site:prod": "sh expand.sh %_fb_cli deploy --only hosting:%_target && echo || sh expand.sh echo See %./firebase-debug.log",
     "deploy:site:canary": "sh run_all.sh site:versionup site:canary site:showversion",
