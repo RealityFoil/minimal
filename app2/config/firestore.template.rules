@@ -1,3 +1,10 @@
+// ||DISCLAIMER||
+// TODO: config/firestore.rules hasn't been regenerated since this template gained the disclaimer
+// line above, so it still has the old one, which doesn't name a command or sources.
+// `npm run -w @rf.minimal/app2 rules:build` fails with "No workspaces found": no project lists app2
+// (config/project.minimal.txt has only @rf.minimal/app), so it never becomes a workspace. Add it to
+// a project and run `mono_init.sh --configure`, or retire app2; then rerun the build.
+
 rules_version = '2';
 
 service cloud.firestore {
