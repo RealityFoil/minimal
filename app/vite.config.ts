@@ -3,11 +3,11 @@ import type { PluginOption, UserConfig } from 'vite';
 import { mergeConfig } from 'vite';
 import { defineConfig as defineVitestConfig } from 'vitest/config';
 
-const plugins: PluginOption[] = [];
-plugins.push(sveltekit());
+const Plugins: PluginOption[] = [];
+Plugins.push(sveltekit());
 
-const viteConfig: UserConfig = {
-  plugins,
+const ViteConfig: UserConfig = {
+  plugins: Plugins,
   cacheDir: '.built/vite',
   build: {
     sourcemap: true,
@@ -17,10 +17,10 @@ const viteConfig: UserConfig = {
   },
 };
 
-const vitestConfig = defineVitestConfig({
+const VitestConfig = defineVitestConfig({
   test: {
     include: ['src/**/*.{test,spec}.{js,ts}'],
   },
 });
 
-export default mergeConfig(viteConfig, vitestConfig);
+export default mergeConfig(ViteConfig, VitestConfig);
