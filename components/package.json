@@ -6,6 +6,13 @@
     "./*.ts": "./src/*.ts",
     "./*": "./src/*"
   },
+  "config": {
+    "deps": {
+      "svelte.dev": {
+        "@sveltejs/adapter-auto": "3.1.1"
+      }
+    }
+  },
   "scripts": {
     "postclean": "sh svelte_init.sh",
     "dev": "svelte-package -w -o .built/dist",
@@ -13,7 +20,10 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "@sveltejs/adapter-auto": "7.0.1",
+    "@sveltejs/adapter-auto": "3.1.1",
     "@sveltejs/vite-plugin-svelte": "7.3.0"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "3.1.1"
   }
 }
