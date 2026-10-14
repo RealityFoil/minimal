@@ -49,32 +49,5 @@
     "deploy:site:canary": "sh run_all.sh site:versionup site:canary site:showversion",
     "deploy:site:canary-to-prod": "sh expand.sh %_fb_cli hosting:clone %_project:canary %_project:live",
     "deploy:site:prod-unsafe": "sh run_all.sh site:versionup site:prod site:showversion"
-  },
-  "dependencies": {
-    "@firebase/util": "*",
-    "@google-cloud/error-reporting": "3.0.5",
-    "@google-cloud/secret-manager": "6.1.0",
-    "@sveltejs/kit": "2.55.0",
-    "@tailwindplus/elements": "1.0.22",
-    "esm-env": "1.2.2",
-    "firebase": "12.12.1",
-    "firebase-admin": "13.8.0",
-    "luxon": "3.7.2",
-    "svelte": "5.55.0",
-    "svelte-modals": "2.0.1",
-    "vite": "8.2.2"
-  },
-  "devDependencies": {
-    "@rf/common": "file:../../../packages/common/lib",
-    "@rf/node.apis.gcloud": "file:../../../packages/node/apis/gcloud",
-    "@rf/node.app": "file:../../../packages/node/app",
-    "@rf/node.core": "file:../../../packages/node/core",
-    "@rf/node.firebase": "file:../../../packages/node/firebase",
-    "@rf/util.app": "file:../../../packages/util/app",
-    "@rf/util.firebase": "file:../../../packages/util/firebase",
-    "@rf/util.svelte": "file:../../../packages/util/svelte",
-    "@rf/web.app": "file:../../../packages/web/app",
-    "@rf/web.config": "file:../../../packages/web/config",
-    "@rf/web.firebase": "file:../../../packages/web/firebase"
   }
 }
