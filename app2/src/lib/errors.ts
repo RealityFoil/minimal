@@ -13,6 +13,7 @@ import {
   isNumber,
   isPresent,
   isString,
+  maybe,
   pare,
   pick,
   recordEntries,
@@ -78,7 +79,7 @@ export async function reportError(
       where: pare({
         url,
         func: site?.func,
-        file: isPresent(site) ? `${site.path}${site.file}` : undefined,
+        file: maybe(site, (s) => `${s.path}${s.file}`),
         line: asNumber(site?.line),
         stack,
       }),
