@@ -14,7 +14,7 @@
     }
   },
   "scripts": {
-    "postclean": "sh svelte_init.sh",
+    "postclean": "bash m svelte-init",
     "dev": "svelte-package -w -o .built/dist",
     "build": "svelte-package -o .built/dist"
   },
