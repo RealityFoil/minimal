@@ -7,6 +7,7 @@
 .eslintcache
 *.isolate
 dist/
+.vitest/
 
 # Not under management
 .DS_Store
