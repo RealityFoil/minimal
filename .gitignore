@@ -8,6 +8,7 @@
 *.isolate
 dist/
 .vitest/
+.svelte-kit/
 
 # Not under management
 .DS_Store

@@ -1,9 +1,14 @@
 {
-  "extends": ["../tsconfig.base.json", "./.built/tsconfig.json"],
+  // $app/tsconfig is the tsconfig SvelteKit generates (node_modules/$app/tsconfig.json), written by
+  // `svelte-kit sync`, which `m svelte-init` runs after an install. It gives the paths, rootDirs
+  // and types of the generated code; the files are listed here.
+  "extends": ["../tsconfig.base.json", "$app/tsconfig"],
   "compilerOptions": {
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "outDir": "./.built"
   },
+  "include": ["src", "test", "tests", "vite.config.ts"],
+  "exclude": ["**/node_modules", "src/service-worker"],
   "references": []
 }

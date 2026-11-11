@@ -31,6 +31,14 @@ const ViteConfig: UserConfig = {
   resolve: {
     extensions: ['.mjs', '.js', '.ts'],
   },
+  // SvelteKit's server code imports `cookie` (version 2), which Vite leaves as a bare import in the
+  // server build when Node can resolve the name from here. It can, to the wrong one: the root
+  // node_modules holds cookie 0.7 (express's), and pnpm nests SvelteKit's own under @sveltejs/kit,
+  // where the built chunk doesn't look. Bundled, the build takes the copy SvelteKit resolves. An
+  // adapter-node build bundles every dependency anyway; this one (adapter-static) doesn't.
+  ssr: {
+    noExternal: ['cookie'],
+  },
 };
 
 const VitestConfig = defineVitestConfig({

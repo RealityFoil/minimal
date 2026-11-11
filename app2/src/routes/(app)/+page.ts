@@ -7,7 +7,7 @@ export async function load({ url }: { url: URL }) {
     log('Forced sign out.', {}, { level: 'warn' });
     url.searchParams.delete('signOut');
     await userSignOut();
-    goto(url.toString(), { replaceState: true, keepFocus: true });
+    goto(url.toString(), { replace: true, reset: false });
   }
 
   return {};

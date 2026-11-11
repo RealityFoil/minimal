@@ -7,11 +7,7 @@
     "./*": "./src/*"
   },
   "config": {
-    "deps": {
-      "svelte.dev": {
-        "@sveltejs/adapter-auto": "3.1.1"
-      }
-    }
+    "deps": {}
   },
   "scripts": {
     "postclean": "bash m svelte-init",
@@ -20,7 +16,6 @@
   },
   "peerDependencies": {},
   "devDependencies": {
-    "@sveltejs/adapter-auto": "3.1.1",
     "@sveltejs/vite-plugin-svelte": "7.3.1"
   }
 }

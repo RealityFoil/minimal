@@ -1,5 +1,5 @@
 import { initFirebase } from '#lib/server/firebase.ts';
-import type { ServerInit } from '@sveltejs/kit';
+import type { ServerInit } from '@sveltejs/kit/hooks';
 import { handleServerRequest } from '@rf/node.firebase/appInit.ts';
 
 export const init: ServerInit = async () => {

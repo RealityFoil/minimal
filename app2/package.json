@@ -53,7 +53,7 @@
   "dependencies": {
     "@google-cloud/error-reporting": "4.3.0",
     "@google-cloud/secret-manager": "8.0.0",
-    "@sveltejs/kit": "2.70.3",
+    "@sveltejs/kit": "3.2.0",
     "@tailwindplus/elements": "1.0.22",
     "chroma-js": "3.3.0",
     "esm-env": "1.2.2",
