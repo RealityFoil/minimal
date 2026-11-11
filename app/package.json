@@ -2,6 +2,11 @@
   "name": "@rf.minimal/app",
   "version": "0.0.0",
   "type": "module",
+  "// imports": "The app's own modules, as #lib/<path>, with their extensions: what SvelteKit's $lib alias was.",
+  "imports": {
+    "#lib/*.svelte": "./src/lib/*.svelte",
+    "#lib/*.ts": "./src/lib/*.ts"
+  },
   "scripts": {
     "postclean": "bash m svelte-init",
     "dev": "vite --configLoader runner dev",
